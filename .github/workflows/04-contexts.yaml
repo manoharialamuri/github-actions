@@ -63,3 +63,5 @@ jobs:
     steps:
       - name: run sonar scans
         run: echo "run sonar scan"
+      - name: job status
+        run: echo "${{ toJson(job) }}"
