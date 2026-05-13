@@ -66,4 +66,4 @@ jobs:
       - name: job status
         run: echo "${{ toJson(job) }}"
       - name: print runner
-        run: echo "{{ toJson(runner) }}"
+        run: echo "${{ toJson(runner) }}"
