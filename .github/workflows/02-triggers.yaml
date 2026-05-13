@@ -1,9 +1,14 @@
 name: triggers demo
 on: 
-  push:
+  # if someone opens PR to main branch
+  pull_request:
+    types: [opened, reopened]
     branches:
+      - 'releases/**'
+  # push:
+  #   branches:
       #- 'feature*'
-      - 'main'
+      #- 'main'
 # workflow_dispatch # Triggers the workflow on every push to the repository
 
 
