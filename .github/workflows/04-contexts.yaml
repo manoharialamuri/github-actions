@@ -65,3 +65,5 @@ jobs:
         run: echo "run sonar scan"
       - name: job status
         run: echo "${{ toJson(job) }}"
+      - name: print runner
+        run: echo "{{ toJson(runner) }}"
