@@ -38,9 +38,9 @@ jobs:
           echo "Image name: ${{ steps.tag.outputs.image-name }}"
       - name: github env
         run: | 
-          echo "course=github-actions" >>GITHUB_ENV
-          echo "duration=5hours" >>GITHUB_ENV
+          echo "course=github-actions" >> GITHUB_ENV
+          echo "duration=5hours" >> GITHUB_ENV
       - name: print github env
         run: | 
-          echo "course: $course" >>GITHUB_ENV
-          echo "duration: $duration" >>GITHUB_ENV
+          echo "course: $course" >> GITHUB_ENV
+          echo "duration: $duration" >> GITHUB_ENV
