@@ -2,7 +2,8 @@ name: triggers demo
 on: 
   push:
     branches:
-      - 'feature*'
+      #- 'feature*'
+      - 'main'
 # workflow_dispatch # Triggers the workflow on every push to the repository
 
 
